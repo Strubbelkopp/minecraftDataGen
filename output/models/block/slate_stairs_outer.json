@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "originrealms:block/slate",
-        "top": "originrealms:block/slate",
-        "side": "originrealms:block/slate"
-    }
-}

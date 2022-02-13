@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "originrealms:block/tall_dry_bush_bottom"
-    }
-}

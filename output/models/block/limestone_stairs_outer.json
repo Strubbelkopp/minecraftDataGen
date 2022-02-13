@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "originrealms:block/limestone",
-        "top": "originrealms:block/limestone",
-        "side": "originrealms:block/limestone"
-    }
-}

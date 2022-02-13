@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "originrealms:block/slate_brick",
-        "top": "originrealms:block/slate_brick",
-        "side": "originrealms:block/slate_brick"
-    }
-}

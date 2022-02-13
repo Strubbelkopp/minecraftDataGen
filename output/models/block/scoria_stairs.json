@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "originrealms:block/scoria",
-        "top": "originrealms:block/scoria",
-        "side": "originrealms:block/scoria"
-    }
-}

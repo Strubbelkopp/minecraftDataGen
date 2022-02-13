@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "originrealms:block/blue_nether_brick",
-        "top": "originrealms:block/blue_nether_brick",
-        "side": "originrealms:block/blue_nether_brick"
-    }
-}

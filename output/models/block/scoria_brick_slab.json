@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "originrealms:block/scoria_brick",
-        "top": "originrealms:block/scoria_brick",
-        "side": "originrealms:block/scoria_brick"
-    }
-}

@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "originrealms:block/netherite_pillar_top",
-        "side": "originrealms:block/netherite_pillar"
-    }
-}
