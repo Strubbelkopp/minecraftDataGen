@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "powered=false": {
+            "model": "originrealms:block/andesite_pressure_plate"
+        },
+        "powered=true": {
+            "model": "originrealms:block/andesite_pressure_plate_down"
+        }
+    }
+}

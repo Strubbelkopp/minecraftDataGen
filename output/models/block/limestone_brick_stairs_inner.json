@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "originrealms:block/limestone_brick",
+        "top": "originrealms:block/limestone_brick",
+        "side": "originrealms:block/limestone_brick"
+    }
+}

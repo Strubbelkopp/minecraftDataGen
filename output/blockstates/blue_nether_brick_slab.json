@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "originrealms:block/blue_nether_brick_slab"
+        },
+        "type=double": {
+            "model": "originrealms:block/blue_nether_brick"
+        },
+        "type=top": {
+            "model": "originrealms:block/blue_nether_brick_slab_top"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "powered=false": {
+            "model": "originrealms:block/slate_pressure_plate"
+        },
+        "powered=true": {
+            "model": "originrealms:block/slate_pressure_plate_down"
+        }
+    }
+}

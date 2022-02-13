@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "top": "MODID:block/NAME_top",
+    "bottom": "MODID:block/NAME_bottom"
+  }
+}

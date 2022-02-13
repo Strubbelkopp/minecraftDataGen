@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "originrealms:block/amaryllis_top"
+    }
+}

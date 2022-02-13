@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "originrealms:block/tall_beach_grass_top"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "originrealms:block/iron_bricks"
+    }
+}

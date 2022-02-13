@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "originrealms:block/scoria"
+        },
+        "axis=z": {
+            "model": "originrealms:block/scoria",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "originrealms:block/scoria",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "originrealms:block/kyanite",
+        "top": "originrealms:block/kyanite",
+        "side": "originrealms:block/kyanite"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "originrealms:block/andesite_brick_slab"
+        },
+        "type=double": {
+            "model": "originrealms:block/andesite_brick"
+        },
+        "type=top": {
+            "model": "originrealms:block/andesite_brick_slab_top"
+        }
+    }
+}

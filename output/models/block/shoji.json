@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "originrealms:block/shoji_top",
+        "side": "originrealms:block/shoji"
+    }
+}

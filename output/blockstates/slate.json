@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "originrealms:block/slate"
+        },
+        "axis=z": {
+            "model": "originrealms:block/slate",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "originrealms:block/slate",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

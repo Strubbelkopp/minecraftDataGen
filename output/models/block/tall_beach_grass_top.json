@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "originrealms:block/tall_beach_grass_top"
+    }
+}

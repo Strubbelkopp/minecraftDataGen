@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "MODID:block/NAME",
+    "top": "MODID:block/NAME",
+    "side": "MODID:block/NAME"
+  }
+}

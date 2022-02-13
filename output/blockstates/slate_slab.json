@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "originrealms:block/slate_slab"
+        },
+        "type=double": {
+            "model": "originrealms:block/slate"
+        },
+        "type=top": {
+            "model": "originrealms:block/slate_slab_top"
+        }
+    }
+}

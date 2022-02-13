@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "originrealms:block/strata_top",
+        "side": "originrealms:block/strata"
+    }
+}

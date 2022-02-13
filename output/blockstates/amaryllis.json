@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=lower": {
+            "model": "originrealms:block/amaryllis_bottom"
+        },
+        "half=upper": {
+            "model": "originrealms:block/amaryllis_top"
+        }
+    }
+}

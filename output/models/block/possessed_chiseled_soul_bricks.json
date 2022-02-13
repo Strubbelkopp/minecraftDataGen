@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "originrealms:block/possessed_chiseled_soul_bricks_top",
+        "side": "originrealms:block/possessed_chiseled_soul_bricks"
+    }
+}

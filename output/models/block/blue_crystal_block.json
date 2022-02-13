@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "originrealms:block/blue_crystal_block_top",
+        "side": "originrealms:block/blue_crystal_block"
+    }
+}

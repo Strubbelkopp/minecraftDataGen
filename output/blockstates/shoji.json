@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "originrealms:block/shoji"
+        },
+        "axis=z": {
+            "model": "originrealms:block/shoji",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "originrealms:block/shoji",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

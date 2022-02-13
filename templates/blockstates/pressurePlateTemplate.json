@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "MODID:block/NAME"
+    },
+    "powered=true": {
+      "model": "MODID:block/NAME_down"
+    }
+  }
+}

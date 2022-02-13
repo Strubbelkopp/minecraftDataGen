@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "originrealms:block/scoria_brick_slab"
+        },
+        "type=double": {
+            "model": "originrealms:block/scoria_brick"
+        },
+        "type=top": {
+            "model": "originrealms:block/scoria_brick_slab_top"
+        }
+    }
+}

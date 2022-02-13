@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "originrealms:block/cattail_top"
+    }
+}

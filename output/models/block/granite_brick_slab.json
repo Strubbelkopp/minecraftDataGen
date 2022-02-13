@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "originrealms:block/granite_brick",
+        "top": "originrealms:block/granite_brick",
+        "side": "originrealms:block/granite_brick"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "originrealms:block/limestone_brick_slab"
+        },
+        "type=double": {
+            "model": "originrealms:block/limestone_brick"
+        },
+        "type=top": {
+            "model": "originrealms:block/limestone_brick_slab_top"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "originrealms:block/molten_scoria"
+        },
+        "axis=z": {
+            "model": "originrealms:block/molten_scoria",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "originrealms:block/molten_scoria",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

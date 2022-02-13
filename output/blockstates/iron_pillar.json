@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "originrealms:block/iron_pillar"
+        },
+        "axis=z": {
+            "model": "originrealms:block/iron_pillar",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "originrealms:block/iron_pillar",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

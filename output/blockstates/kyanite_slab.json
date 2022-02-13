@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "originrealms:block/kyanite_slab"
+        },
+        "type=double": {
+            "model": "originrealms:block/kyanite"
+        },
+        "type=top": {
+            "model": "originrealms:block/kyanite_slab_top"
+        }
+    }
+}

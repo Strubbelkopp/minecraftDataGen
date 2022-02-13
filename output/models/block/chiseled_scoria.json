@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "originrealms:block/chiseled_scoria_top",
+        "side": "originrealms:block/chiseled_scoria"
+    }
+}

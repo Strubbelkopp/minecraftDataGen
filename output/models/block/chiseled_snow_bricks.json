@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "originrealms:block/chiseled_snow_bricks_top",
+        "side": "originrealms:block/chiseled_snow_bricks"
+    }
+}

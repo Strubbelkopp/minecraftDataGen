@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "half=lower": {
+            "model": "originrealms:block/tall_dry_bush_bottom"
+        },
+        "half=upper": {
+            "model": "originrealms:block/tall_dry_bush_top"
+        }
+    }
+}
