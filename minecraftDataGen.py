@@ -24,20 +24,17 @@ def writeFile(path, data):
     with open(getFilePath(path), "w") as write_file:
         json.dump(json.loads(data), write_file, indent=4)
 
-def replaceData(mod_id, name, data):
-    data = data.replace("MODID", mod_id)
-    data = data.replace("NAME", name)
-    return data
-
 def saveNewFile(mod_id, name, template_path, output_path):
     data = readFile(template_path)
-    data = replaceData(mod_id, name, data)
+    data = data.replace("MODID", mod_id)
+    data = data.replace("NAME", name)
     writeFile(output_path, data)
 
 def saveSlabBlockstate(mod_id, name1, name2, template_path, output_path):
     data = readFile(template_path)
+    data = data.replace("MODID", mod_id)
     data = data.replace("BLOCK_MODEL_NAME", name2)
-    data = replaceData(mod_id, name1, data)
+    data = data.replace("NAME", name1)
     writeFile(output_path, data)
 
 def createBlockAssets(mod_id, name):
