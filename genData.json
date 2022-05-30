@@ -1,33 +1,78 @@
 {
     "mod_id": "",
+
+    "_block_comment_": "Texture name will be the same as the specified block id",
+    "_block_example_": "baobab_planks",
     "block": [
     ],
+
+    "_stairs_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
+    "_stairs_example_": "[''baobab_stairs'', ''baobab_planks'']",
     "stairs": [
     ],
+
+    "_slab_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
+    "_slab_example_": "[''baobab_slab'', ''baobab_planks'']",
     "slab": [
     ],
+
+    "_button_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
+    "_button_example_": "[''baobab_button'', ''baobab_planks'']",
     "button": [
     ],
+
+    "_door_comment_": "",
+    "_door_example_": "baobab_door",
     "door": [
     ],
+
+    "_pressure_plate_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
+    "_pressure_plate_example_": "[''baobab_pressure_plate'', ''baobab_planks'']",
     "pressure_plate": [
     ],
+
+    "_fence_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
+    "_fence_example_": "[''baobab_fence'', ''baobab_planks'']",
     "fence": [
     ],
+
+    "_fence_gate_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
+    "_fence_gate_example_": "[''baobab_fence_gate'', ''baobab_planks'']",
     "fence_gate": [
     ],
+
+    "_orientable_pillar_block_comment_": "Block with a top/bottom and side texture, that can be placed on 3 axes",
+    "_orientable_pillar_block_example_": "baobab_log",
     "orientable_pillar_block": [
     ],
+
+    "_pillar_block_comment_": "Block with a top/bottom and side texture that will always point up",
+    "_pillar_block_example_": "",
     "pillar_block": [
     ],
+
+    "_sign_comment_": "Has to be a list where the first value will be the block id and the second will be the breaking particle texture",
+    "_sign_example_": "[''baobab_sign'', ''baobab_planks'']",
     "sign": [
     ],
+
+    "_trapdoor_comment_": "",
+    "_trapdoor_example_": "baobab_trapdoor",
     "trapdoor": [
     ],
+
+    "_wall_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
+    "_wall_example_": "[''baobab_wall'', ''baobab_planks'']",
     "wall": [
     ],
+
+    "_plant_comment_": "",
+    "_plant_example": "",
     "plant": [
     ],
+    
+    "_tall_plant_comment_": "",
+    "_tall_plant_example": "",
     "tall_plant": [
     ]
 }
