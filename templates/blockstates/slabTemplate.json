@@ -4,7 +4,7 @@
       "model": "MODID:block/NAME_slab"
     },
     "type=double": {
-      "model": "MODID:block/NAME"
+      "model": "MODID:block/BLOCK_MODEL_NAME"
     },
     "type=top": {
       "model": "MODID:block/NAME_slab_top"
