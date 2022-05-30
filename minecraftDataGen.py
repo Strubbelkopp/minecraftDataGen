@@ -49,367 +49,226 @@ def replaceData(mod_id, name, data):
     data = data.replace("NAME", name)
     return data
 
+def saveNewFile(mod_id, replace_name, template_path, output_path):
+    data = readFile(template_path)
+    data = replaceData(mod_id, replace_name, data)
+    writeFile((output_path), data)
+
 def createBlockAssets(mod_id, name):
     #model
-    data = readFile("templates/models/block/blockTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/blockTemplate.json", "output/models/block/" + name + ".json")
     #item model
-    data = readFile("templates/models/item/blockItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/blockItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/blockTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/blockTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createStairAssets(mod_id, name):
     truncated_name = name.replace("_stairs", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #model
-    data = readFile("templates/models/block/stairsTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/stairsTemplate.json", "output/models/block/" + name + ".json")
     #inner model
-    data = readFile("templates/models/block/stairsInnerTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_inner.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/stairsInnerTemplate.json", "output/models/block/" + name + "_inner.json")
     #outer model
-    data = readFile("templates/models/block/stairsOuterTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_outer.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/stairsOuterTemplate.json", "output/models/block/" + name + "_outer.json")
     #item model
-    data = readFile("templates/models/item/blockItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/blockItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/stairsTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/stairsTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createSlabAssets(mod_id, name):
     truncated_name = name.replace("_slab", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #slab model
-    data = readFile("templates/models/block/slabTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/slabTemplate.json", "output/models/block/" + name + ".json")
     #slab top model
-    data = readFile("templates/models/block/slabTopTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_top.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/slabTopTemplate.json", "output/models/block/" + name + "_top.json")
     #item model
-    data = readFile("templates/models/item/blockItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/blockItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/slabTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/blockstates/slabTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSlabTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSlabTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createButtonAssets(mod_id, name):
     truncated_name = name.replace("_button", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #pressed model
-    data = readFile("templates/models/block/buttonPressedTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_pressed.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/buttonPressedTemplate.json", "output/models/block/" + name + "_pressed.json")
     #button model
-    data = readFile("templates/models/block/buttonTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/buttonTemplate.json", "output/models/block/" + name + ".json")
     #inventory model
-    data = readFile("templates/models/block/buttonInventoryTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_inventory.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/buttonInventoryTemplate.json", "output/models/block/" + name + "_inventory.json")
     #item model
-    data = readFile("templates/models/item/inventoryItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/inventoryItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/buttonTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/buttonTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createDoorAssets(mod_id, name):
     #bottom model
-    data = readFile("templates/models/block/doorBottomTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_bottom.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/doorBottomTemplate.json", "output/models/block/" + name + "_bottom.json")
     #bottom hinge model
-    data = readFile("templates/models/block/doorBottomHingeTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_bottom_hinge.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/doorBottomHingeTemplate.json", "output/models/block/" + name + "_bottom_hinge.json")
     #top model
-    data = readFile("templates/models/block/doorTopTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_top.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/doorTopTemplate.json", "output/models/block/" + name + "_top.json")
     #top hinge model
-    data = readFile("templates/models/block/doorTopHingeTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_top_hinge.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/doorTopHingeTemplate.json", "output/models/block/" + name + "_top_hinge.json")
     #item model
-    data = readFile("templates/models/item/itemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/itemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/doorTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/doorTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropDoorTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropDoorTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createPressurePlateAssets(mod_id, name):
     truncated_name = name.replace("_pressure_plate", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #pressure plate model
-    data = readFile("templates/models/block/pressurePlateTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/pressurePlateTemplate.json", "output/models/block/" + name + ".json")
     #pressure plate down model
-    data = readFile("templates/models/block/pressurePlateDownTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_down.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/pressurePlateDownTemplate.json", "output/models/block/" + name + "_down.json")
     #item model
-    data = readFile("templates/models/item/blockItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/blockItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/pressurePlateTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/pressurePlateTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createFenceAssets(mod_id, name):
     truncated_name = name.replace("_fence", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #fence side model
-    data = readFile("templates/models/block/fenceSideTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_side.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/fenceSideTemplate.json", "output/models/block/" + name + "_side.json")
     #fence post model
-    data = readFile("templates/models/block/fencePostTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_post.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/fencePostTemplate.json", "output/models/block/" + name + "_post.json")
     #inventory model
-    data = readFile("templates/models/block/fenceInventoryTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_inventory.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/fenceInventoryTemplate.json", "output/models/block/" + name + "_inventory.json")
     #item model
-    data = readFile("templates/models/item/inventoryItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/inventoryItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/fenceTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/fenceTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createFenceGateAssets(mod_id, name):
     truncated_name = name.replace("_fence_gate", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #fence gate model
-    data = readFile("templates/models/block/fenceGateTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/fenceGateTemplate.json", "output/models/block/" + name + ".json")
     #fence gate open model
-    data = readFile("templates/models/block/fenceGateOpenTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_open.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/fenceGateOpenTemplate.json", "output/models/block/" + name + "_open.json")
     #fence gate wall model
-    data = readFile("templates/models/block/fenceGateWallTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_wall.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/fenceGateWallTemplate.json", "output/models/block/" + name + "_wall.json")
     #fence gate wall open model
-    data = readFile("templates/models/block/fenceGateWallOpenTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_wall_open.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/fenceGateWallOpenTemplate.json", "output/models/block/" + name + "_wall_open.json")
     #item model
-    data = readFile("templates/models/item/blockItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/blockItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/fenceGateTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/fenceGateTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createOrientablePillarBlockAssets(mod_id, name):
     #model
-    data = readFile("templates/models/block/pillarBlockTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/pillarBlockTemplate.json", "output/models/block/" + name + ".json")
     #item model
-    data = readFile("templates/models/item/blockItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/blockItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/pillarBlockTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/pillarBlockTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
     
 def createPillarBlockAssets(mod_id, name):
     #model
-    data = readFile("templates/models/block/pillarBlockTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/pillarBlockTemplate.json", "output/models/block/" + name + ".json")
     #item model
-    data = readFile("templates/models/item/blockItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/blockItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/blockTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/blockTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createSignAssets(mod_id, name):
     truncated_name = name.replace("_sign", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #sign model
-    data = readFile("templates/models/block/signTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/signTemplate.json", "output/models/block/" + name + ".json")
     #item model
-    data = readFile("templates/models/item/itemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/itemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/signTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/signTemplate.json", "output/blockstates/" + name + ".json")
     #wall blockstate
-    data = readFile("templates/blockstates/wallSignTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + truncated_name + "_wall_sign.json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/wallSignTemplate.json", "output/blockstates/" + truncated_name + "_wall_sign.json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createTrapdoorAssets(mod_id, name):
     #trapdoor bottom model
-    data = readFile("templates/models/block/trapdoorBottomTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_bottom.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/trapdoorBottomTemplate.json", "output/models/block/" + name + "_bottom.json")
     #trapdoor top model
-    data = readFile("templates/models/block/trapdoorTopTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_top.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/trapdoorTopTemplate.json", "output/models/block/" + name + "_top.json")
     #trapdoor open model
-    data = readFile("templates/models/block/trapdoorOpenTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_open.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/trapdoorOpenTemplate.json", "output/models/block/" + name + "_open.json")
     #item model
-    data = readFile("templates/models/item/trapdoorItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/trapdoorItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/trapdoorTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/trapdoorTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createWallAssets(mod_id, name):
     truncated_name = name.replace("_wall", '')
+    if("brick" in truncated_name):
+        truncated_name = truncated_name.replace("brick", "bricks")
     #wall side model
-    data = readFile("templates/models/block/wallSideTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_side.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/wallSideTemplate.json", "output/models/block/" + name + "_side.json")
     #wall side tall model
-    data = readFile("templates/models/block/wallSideTallTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_side_tall.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/wallSideTallTemplate.json", "output/models/block/" + name + "_side_tall.json")
     #wall post model
-    data = readFile("templates/models/block/wallPostTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_post.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/wallPostTemplate.json", "output/models/block/" + name + "_post.json")
     #inventory model
-    data = readFile("templates/models/block/wallInventoryTemplate.json")
-    data = replaceData(mod_id, truncated_name, data)
-    writeFile(("output/models/block/" + name + "_inventory.json"), data)
+    saveNewFile(mod_id, truncated_name, "templates/models/block/wallInventoryTemplate.json", "output/models/block/" + name + "_inventory.json")
     #item model
-    data = readFile("templates/models/item/inventoryItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/inventoryItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/wallTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/wallTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
     
 def createPlantAssets(mod_id, name):
     #model
-    data = readFile("templates/models/block/plantTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/plantTemplate.json", "output/models/block/" + name + ".json")
     #item model
-    data = readFile("templates/models/item/plantItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/plantItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/plantTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/plantTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropSelfTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createTallPlantAssets(mod_id, name):
     #model bottom
-    data = readFile("templates/models/block/tallPlantBottomTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_bottom.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/tallPlantBottomTemplate.json", "output/models/block/" + name + "_bottom.json")
     #model top
-    data = readFile("templates/models/block/tallPlantTopTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/block/" + name + "_top.json"), data)
+    saveNewFile(mod_id, name, "templates/models/block/tallPlantTopTemplate.json", "output/models/block/" + name + "_top.json")
     #item model
-    data = readFile("templates/models/item/tallPlantItemTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/models/item/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/models/item/tallPlantItemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate
-    data = readFile("templates/blockstates/tallPlantTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/blockstates/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/blockstates/tallPlantTemplate.json", "output/blockstates/" + name + ".json")
     #loot_table
-    data = readFile("templates/loot_tables/blocks/dropTallPlantTemplate.json")
-    data = replaceData(mod_id, name, data)
-    writeFile(("output/loot_tables/blocks/" + name + ".json"), data)
+    saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropTallPlantTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createAssets():
     data = json.loads(readFile("genData.json"))
