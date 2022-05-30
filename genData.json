@@ -7,17 +7,17 @@
     ],
 
     "_stairs_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
-    "_stairs_example_": "[''baobab_stairs'', ''baobab_planks'']",
+    "_stairs_example_": ["baobab_stairs", "baobab_planks"],
     "stairs": [
     ],
 
     "_slab_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
-    "_slab_example_": "[''baobab_slab'', ''baobab_planks'']",
+    "_slab_example_": ["baobab_slab", "baobab_planks"],
     "slab": [
     ],
 
     "_button_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
-    "_button_example_": "[''baobab_button'', ''baobab_planks'']",
+    "_button_example_": ["baobab_button", "baobab_planks"],
     "button": [
     ],
 
@@ -27,17 +27,17 @@
     ],
 
     "_pressure_plate_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
-    "_pressure_plate_example_": "[''baobab_pressure_plate'', ''baobab_planks'']",
+    "_pressure_plate_example_": ["baobab_pressure_plate", "baobab_planks"],
     "pressure_plate": [
     ],
 
     "_fence_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
-    "_fence_example_": "[''baobab_fence'', ''baobab_planks'']",
+    "_fence_example_": ["baobab_fence", "baobab_planks"],
     "fence": [
     ],
 
     "_fence_gate_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
-    "_fence_gate_example_": "[''baobab_fence_gate'', ''baobab_planks'']",
+    "_fence_gate_example_": ["baobab_fence_gate", "baobab_planks"],
     "fence_gate": [
     ],
 
@@ -52,7 +52,7 @@
     ],
 
     "_sign_comment_": "Has to be a list where the first value will be the block id and the second will be the breaking particle texture",
-    "_sign_example_": "[''baobab_sign'', ''baobab_planks'']",
+    "_sign_example_": ["baobab_sign", "baobab_planks"],
     "sign": [
     ],
 
@@ -62,7 +62,7 @@
     ],
 
     "_wall_comment_": "Has to be a list where the first value will be the block id and the second will be the texture",
-    "_wall_example_": "[''baobab_wall'', ''baobab_planks'']",
+    "_wall_example_": ["baobab_wall", "baobab_planks"],
     "wall": [
     ],
 
@@ -70,7 +70,7 @@
     "_plant_example": "",
     "plant": [
     ],
-    
+
     "_tall_plant_comment_": "",
     "_tall_plant_example": "",
     "tall_plant": [
