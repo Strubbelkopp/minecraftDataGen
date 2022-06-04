@@ -234,6 +234,9 @@ def createTallPlantAssets(mod_id, name):
 def createAssets():
     data = json.loads(readFile("genData.json"))
     mod_id = data["mod_id"]
+    if(mod_id == ""):
+        raise Exception("No mod_id specified!")
+    createDirectories()
     for block in data["block"]:
         createBlockAssets(mod_id, block)
     for stairs in data["stairs"]:
@@ -265,5 +268,4 @@ def createAssets():
     for tall_plant in data["tall_plant"]:
         createTallPlantAssets(mod_id, tall_plant)
 
-createDirectories()
 createAssets()
