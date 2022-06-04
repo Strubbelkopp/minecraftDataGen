@@ -89,14 +89,22 @@ def createButtonAssets(mod_id, name, texture):
     saveNewFile(mod_id, name, "templates/loot_tables/blocks/dropSelfTemplate.json", "output/loot_tables/blocks/" + name + ".json")
 
 def createDoorAssets(mod_id, name):
-    #bottom model
-    saveNewFile(mod_id, name, "templates/models/block/doorBottomTemplate.json", "output/models/block/" + name + "_bottom.json")
-    #bottom hinge model
-    saveNewFile(mod_id, name, "templates/models/block/doorBottomHingeTemplate.json", "output/models/block/" + name + "_bottom_hinge.json")
-    #top model
-    saveNewFile(mod_id, name, "templates/models/block/doorTopTemplate.json", "output/models/block/" + name + "_top.json")
-    #top hinge model
-    saveNewFile(mod_id, name, "templates/models/block/doorTopHingeTemplate.json", "output/models/block/" + name + "_top_hinge.json")
+    #bottom left model
+    saveNewFile(mod_id, name, "templates/models/block/doorBottomLeftTemplate.json", "output/models/block/" + name + "_bottom_left.json")
+    #bottom left model open
+    saveNewFile(mod_id, name, "templates/models/block/doorBottomLeftOpenTemplate.json", "output/models/block/" + name + "_bottom_left_open.json")
+    #bottom right model
+    saveNewFile(mod_id, name, "templates/models/block/doorBottomRightTemplate.json", "output/models/block/" + name + "_bottom_right.json")
+    #bottom right model open
+    saveNewFile(mod_id, name, "templates/models/block/doorBottomRightOpenTemplate.json", "output/models/block/" + name + "_bottom_right_open.json")
+    #top left model
+    saveNewFile(mod_id, name, "templates/models/block/doorTopLeftTemplate.json", "output/models/block/" + name + "_top_left.json")
+    #top left model open
+    saveNewFile(mod_id, name, "templates/models/block/doorTopLeftOpenTemplate.json", "output/models/block/" + name + "_top_left_open.json")
+    #top right model
+    saveNewFile(mod_id, name, "templates/models/block/doorTopRightTemplate.json", "output/models/block/" + name + "_top_right.json")
+    #top right model open
+    saveNewFile(mod_id, name, "templates/models/block/doorTopRightOpenTemplate.json", "output/models/block/" + name + "_top_right_open.json")
     #item model
     saveNewFile(mod_id, name, "templates/models/item/itemTemplate.json", "output/models/item/" + name + ".json")
     #blockstate

@@ -1,5 +1,5 @@
 {
-    "parent": "block/cube_column",
+    "parent": "minecraft:block/cube_column",
     "textures": {
         "end": "MODID:block/NAME_top",
         "side": "MODID:block/NAME"
